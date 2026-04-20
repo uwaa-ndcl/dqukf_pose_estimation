@@ -1,0 +1,11 @@
+name: dqukf_pose_estimation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy<2.3
+  - scipy
+  - opencv
+  - matplotlib
+variables:
+  MPLBACKEND: TkAgg

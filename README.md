@@ -34,7 +34,16 @@ Key features:
 
 ## Installation
 
-Python 3.9+ is recommended.
+Requires Python 3.11.
+
+**Conda (recommended):**
+
+```bash
+conda env create -f environment.yml
+conda activate dqukf_pose_estimation
+```
+
+**pip:**
 
 ```bash
 pip install -r requirements.txt
