@@ -384,7 +384,12 @@ if __name__ == "__main__":
         r'$\overline{r}_x$', r'$\overline{r}_y$', r'$\overline{r}_z$',
         r'$\overline{\omega}_x$', r'$\overline{\omega}_y$', r'$\overline{\omega}_z$',
         r'$\overline{v}_x$', r'$\overline{v}_y$', r'$\overline{v}_z$']
-    error_labels = [r'$||\overline{\phi}||$ (rad)', r'$||\overline{r}||$ (m)']
+    resid_labels = [
+        r'$\delta \overline{\phi}_x$', r'$\delta \overline{\phi}_y$', r'$\delta \overline{\phi}_z$',
+        r'$\delta \overline{r}_x$', r'$\delta \overline{r}_y$', r'$\delta \overline{r}_z$',
+        r'$\delta \overline{\omega}_x$', r'$\delta \overline{\omega}_y$', r'$\delta \overline{\omega}_z$',
+        r'$\delta \overline{v}_x$', r'$\delta \overline{v}_y$', r'$\delta \overline{v}_z$']
+    error_labels = [r'$||\delta \overline{\phi}||$ (rad)', r'$||\delta \overline{r}||$ (m)']
     pf.plot_states(
         t_eval, hist_log_cj, title='Camera wrt Inertial in Camera',
         xlabel=xlabel, ylabel=state_labels)
@@ -393,7 +398,7 @@ if __name__ == "__main__":
         xlabel=xlabel, ylabel=state_labels, figsize=(6.4, 9))
     pf.plot_estimates(
         t_eval, hist_log_tc_est_err, hist_P_est,
-        leglabel='Residual', xlabel=xlabel, ylabel=state_labels,
+        leglabel='Residual', xlabel=xlabel, ylabel=resid_labels,
         figsize=(6.4, 9))
     pf.plot_state_comparison(
         t_eval, est_error_mag, cv_error_mag,
