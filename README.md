@@ -3,7 +3,7 @@
 Code accompanying the paper:
 
 > *Observability and Filter Design for Visual Pose Estimation via Dual Quaternions*  
-> Nicholas B. Andrews and Kristi A. Morgansen
+> Nicholas B. Andrews and Kristi A. Morgansen  
 > [[preprint]](https://arxiv.org/abs/2605.02054)
 <!-- > *[Venue, Year]*  
 > [[Paper]](#) | [[arXiv]](#) -->
